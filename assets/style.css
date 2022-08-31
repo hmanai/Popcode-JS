@@ -1,0 +1,1721 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*********SWEETALERT MODIFICATION*******/
+
+.swal-wide{
+    width:850px !important;
+}
+
+/************/
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("../assets/fonts/Gotham\ Medium.otf");
+}
+
+@font-face {
+    font-family: 'Gothamlight';
+    src: url("../assets/fonts/GothamLight.ttf");
+}
+
+
+@font-face{
+    font-family: 'GothamBold';
+    src: url("../assets/fonts/GothamBold.otf");
+}
+ ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.opacity{
+    opacity: 0;
+    z-index: -1;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+
+}
+
+#accueil {
+ 
+
+    position: absolute;
+    margin-top: 1px;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#accueil h1 {
+    font-size: 7rem;
+ 
+    text-align: center;
+    display: flex; 
+}
+
+/* loader */
+
+ #loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background: url("../assets/img/wall-background.png") no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+}
+.chargement{
+
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.logo{
+
+    margin-top: 50px;
+    
+}
+
+.logo-jeux{
+    position: absolute;
+    margin-top: 100px;
+
+}
+
+.logo-jeux img{
+    height: 250px;
+    width: 350px;
+}
+
+/* ***effet nean pop code*** */
+
+
+
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.PopCode {
+  font-family: neon;
+  color: #261775;
+  font-size: 4vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #261775;
+  transform: translatey(200px);
+}
+
+.game {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 4vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
+  transform: translatey(150px);
+}
+
+.PopCode {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+.game {
+
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #261775, 0 0 3vw #261775, 0 0 10vw #261775, 0 0 10vw #261775, 0 0 .4vw #2769a0, .5vw .5vw .1vw #2151b8;
+    color: #0ea0b9;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #12022e, 0 0 1.5vw #12022e, 0 0 5vw #2151b8, 0 0 5vw #2151b8, 0 0 .2vw #261775, .5vw .5vw .1vw #261775;
+    color: #261775;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+
+/************************************/
+
+.loi{
+    height: 100px;
+    width: 250px;
+    display: flex;
+    position: absolute;
+    z-index: 5555;
+    bottom: 0;
+    right: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    
+}
+.mlegale{
+    position: absolute;
+    font-size: 16px;
+    transform: translatex(-20px); 
+    
+}
+
+
+.politique{
+    position: absolute;
+    font-size: 12pxm;
+    
+}
+
+.lettre {
+    color: #484848;
+    font-size: 80px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 3.2s linear infinite;
+}
+
+.lettre:nth-child(1){
+    animation-delay: 0.1s;
+}
+.lettre:nth-child(2){
+    animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+    animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+    animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+    animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+    animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+    animation-delay: 0.7s;
+}
+.lettre:nth-child(8){
+    animation-delay: 0.8s;
+}
+.lettre:nth-child(9){
+    animation-delay: 0.9s;
+}
+.lettre:nth-child(10){
+    animation-delay: 1s;
+}
+.lettre:nth-child(11){
+    animation-delay: 1.1s;
+}
+.lettre:nth-child(12){
+    animation-delay: 1.2s;
+}
+.lettre:nth-child(13){
+    animation-delay: 1.3s;
+}
+
+.fondu-out {
+    opacity: 0;
+    transition: opacity 8s ease-out;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+:root {
+  /* Base font size */
+  font-size: 10px;   
+  
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+
+
+h1 {
+  font-size: 5rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  padding: 4rem 6rem 5.5rem;
+  border: 0.8rem solid #fff;
+  border-radius: 2rem;
+  animation: flicker 1.5s infinite alternate;     
+}
+.click{
+
+    animation: clignote 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    height: 10px;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    padding: 4rem 6rem 5.5rem;
+    color: #fff;
+    text-shadow:  0 0 7px #fff, 
+                 0 0 10px #fff, 
+                 0 0 42px #f40,   
+                 0 0 77px #f40, 
+                 0 0 100px #f40
+
+}
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;   
+    margin-bottom: 90px;
+    margin-top: 80px;
+    height: 100%;
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 200;
+    font-style: italic;
+    padding: 4rem 6rem 5.5rem;
+    color: #fff;
+    text-shadow:  0 0 7px #fff, 
+                 0 0 10px #fff, 
+                 0 0 42px #08f,   
+                 0 0 77px #08f, 
+                 0 0 100px #08f 
+
+  }
+
+h1::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1:focus {
+  outline: none;
+}
+
+/* page de chargement */
+
+.contenaire{
+
+    width: 100%;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background: url("../assets/img/wall-background.png") no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+.reference{
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    transform: translateY(70%);
+}
+
+.reference .nblanguages{
+
+    color: #0AEFF7;
+    font-family: 'Gotham';
+    text-align: center;
+    transform: translate(-50%-50%);
+    margin-left: 20px;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 150px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.logo img{
+
+    height: 300px;
+    width: 386px;
+    transform: translateY(-60%);
+}
+
+.start{
+    position: absolute;
+    z-index: 2;
+    color: #0AEFF7;
+    font-size: 1.5em;
+    font-family: 'Gotham';
+    bottom: 50px;
+    display: flex;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.start .logoClavier{
+
+    padding-left: 10px;
+font-size: 2rem;    
+}
+
+.reference .ref{
+
+
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 60px;
+    }
+
+.reference .debut-jeux{
+
+    animation: clignote 2s linear infinite;
+    color: #FFAAFF;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 15px;
+
+}
+
+.background-img img{
+
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    user-select: none;
+    
+  
+}
+
+#jeux{
+
+   
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+ .logoUpRight{
+
+  
+    margin-top: 30px;
+    margin-right: 30px;
+    position: absolute;
+    z-index: 5555;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+#jeux .logoUpRight img{
+ 
+    height: 150px;
+    width: 150px;
+    float: right;
+}
+
+.scoreBox{
+
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    float: left;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Gotham';
+    position: fixed;
+    
+}
+
+.scoreUnderligned{
+
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: underline;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    padding-top: 35px;
+  
+    color: #0AEFF7;
+
+}
+
+.scoreBox .scor{
+
+    height: 30px;
+    width: 120px;
+    font-size: 18px;
+    transform: translateX(-15px);
+   
+  
+}
+
+.scoreActuel{
+
+    height: 20px;
+    width: 120px;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.langageTrouve{
+width: 50px;
+display: flex;
+justify-content: flex-end;
+padding-right: 7px;
+}
+
+.totalLangage{
+    
+width: 50px;
+
+}
+
+.nbFautes{
+
+ color: #696969;
+ display: flex;
+ justify-content: space-between;
+ width: 100px;
+ padding-top: 10px;
+ padding-left: 40px;
+ font-weight: bolder;
+
+}
+
+.blockBasGauche{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    width: 800px;
+ 
+}
+
+
+.langTrouvee{
+
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.langTrouvee .lang-finded{
+ 
+    height: 24px;
+    width: 183px;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    border: black solid 5;
+    
+    color: #FFFFFF;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 60px;
+    display: flex;
+    border: 1px solid #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+}
+
+
+
+.mentLegal{
+    
+    height: 95vh;
+    width: 80%;
+    position: relative; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+     z-index : 999999;
+     color: white;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    border:  solid;
+    font-family: 'Gotham';
+    display: none;
+    text-align: center;
+    justify-content: center;
+    transform: translateY(20px);
+    flex-wrap: wrap;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 3px;
+    overflow: scroll!important;
+    scrollbar-color: #FFAAFF #0AEFF7 !important;
+    scrollbar-width: 2px;
+
+    }
+    
+
+    .mentLegal::-webkit-scrollbar-thumb {
+        background: #000;
+    }
+
+#mentlegals{
+
+   padding-top: 55px;
+   text-decoration: none;
+}
+
+.mentLegal .fermerPage{
+
+    color: #FFAAFF;
+    top: 0;
+    right: 0;
+    position: fixed;
+    transform: translate(-20px,10px);
+    cursor: pointer;
+    position: absolute;
+    font-size: 3em;
+   
+    
+
+
+}
+
+.mentLegal > img{
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.7;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+
+}
+.langTrouvee img{
+
+    position: absolute;
+    transform: translateX(35px);
+    padding: 6px;
+    position: fixed;
+    margin-left: 35px;
+}
+
+.zooming{
+
+    height: 500px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    left: 40px;
+    transform: translatey(-55px);
+}
+
+.barreZoom{
+
+    width: 1px;
+    height: 200px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.barreZoom .barZoom {
+
+    height: 40px;
+    max-height: 200px;
+    width: 1px;
+    background: #0AEFF7;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+
+
+   
+}
+
+.plus span{
+
+    font-size: 2.5rem;
+    color: #fff;
+
+}
+
+.moin span{
+
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.plus{
+    transform: translate(38px, -175px );
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.plus span:hover{
+
+    color:#0AEFF7;
+}
+.moin{
+
+    transform: translate(5px, 30px );
+
+}
+
+.moin span:hover{
+
+    color:#0AEFF7;
+}
+
+.plus .zooom{
+
+ color: #0AEFF7;
+ transform: rotate(-90deg);
+ font-size: 14px;
+ padding-bottom: 25px;
+ padding-left: 10px;
+
+}
+
+
+
+.listeLangTrouv{
+
+    min-height: 88vh;
+    width: 30%;
+    position: relative; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+     z-index : 9;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    border:  solid;
+    font-family: 'Gotham';
+    display: none;
+    text-align: center;
+    justify-content: center;
+    transform: translateY(20px);
+    flex-wrap: wrap;
+    overflow-y: scroll;
+  
+
+}
+
+
+#myLogolang{
+
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+  
+}
+
+#listLog{
+    display: flex;
+    width: 80%;
+    min-height: 100%;
+    justify-content: center;
+}
+
+.listeLangTrouv > img{
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.7;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.listeLangTrouv .close{
+
+    color: #FFAAFF;
+    top: 0;
+    right: 0;
+    position: fixed;
+    transform: translate(-10px,10px);
+    cursor: pointer;
+    position: absolute;
+    opacity: 1!important;
+
+
+}
+
+
+
+#myList{
+
+    color: white;
+    opacity: 1!important;
+    position: absolute;
+    text-transform: uppercase;
+
+    
+}
+
+.searLang{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    top: 0%;
+    left: 0;
+    position: fixed;
+    font-size: 10rem;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 77px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    user-select: none;
+    color: #FFFFFF;
+    /* visibility: hidden; */
+}
+#chercher{
+    
+    border: none;
+    outline: none;
+}
+
+#jeux .searLang:focus{
+    border: none;
+}
+ #jeux .tapLang {
+
+
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    bottom: 35%;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 200;
+    line-height: 77px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    user-select: none;
+    color: #FFFFFF;
+
+}
+
+
+#jeux .restart {
+
+    font-size: 18px;
+    position: absolute;
+    z-index: 9999;
+    font-family: 'Gotham';
+    bottom: 0;
+    color: #0AEFF7;
+    transform: translate(-445px);
+    animation: clignote 2s linear infinite;
+    visibility: hidden;
+    margin-bottom: 50px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 4px;
+
+}
+
+#emoji{
+
+    position: absolute;
+    z-index: 9999999;
+    font-size: 10em;
+    transform: translatey(200px);
+    filter: brightness(50%);
+}
+
+.finalScor{
+
+    height: 30px;
+    width: 600px;
+    transform: translateY(130px);
+    font-size: 3rem;
+    font-family: 'Gotham';
+    color: #FFAAFF ;
+    text-align: center;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+@keyframes clignote {  
+  50% { opacity: 0; }
+}
+
+
+#jeux .gameover{
+
+    height: 100vh;
+    min-width: 100%;
+    z-index: 5555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url("../assets/img/Rectangle\ 1.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    user-select: none;
+    
+   
+
+
+}
+
+/************ description des languages avec logos***************** */
+
+#lgTrouver{
+
+    height: 80vh;
+    width: 80%;
+    position: absolute;
+     display: none; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham';
+    color: white;
+    transform: translateY(20%);
+
+    
+} 
+
+#lgTrouver .fermer{
+
+    color: #FFAAFF;
+    font-size: 50px;
+    transform: translate(-50px, -200px);
+    cursor: pointer;
+
+   
+}
+
+
+
+
+#langDescrip{
+  
+    height: 80vh;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.1rem;
+    padding-left: 30px;
+    line-height: 17px;
+    letter-spacing: 5px;
+}
+
+#logoLang{
+
+    height: 80vh;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#logoLang img{
+
+    height: 300px;
+    width: 300px;
+}
+
+#nomLang{
+
+    font-size: 6rem;
+    text-transform: uppercase;
+
+}
+
+
+
+#felicitation{
+
+
+height: 100vh;
+min-width: 100%;
+z-index: 5555;
+display: flex;
+align-items: center;
+justify-content: center;
+visibility: hidden;
+background-repeat:no-repeat;
+background-size: cover;
+background-image: url("../assets/img/Rectangle\ 1.png");
+position: fixed;
+top: 0;
+left: 0;
+user-select: none;
+}
+
+/***********************************************/
+/**********************felicitation*************************/
+
+.confetti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background: #ffd300;
+    top: 0;
+    opacity: 0;
+}
+.confetti-piece:nth-child(1) {
+    left: 7%;
+    -webkit-transform: rotate(-40deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 182ms;
+    -webkit-animation-duration: 1116ms;
+}
+.confetti-piece:nth-child(2) {
+    left: 14%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 161ms;
+    -webkit-animation-duration: 1076ms;
+}
+.confetti-piece:nth-child(3) {
+    left: 21%;
+    -webkit-transform: rotate(-51deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 481ms;
+    -webkit-animation-duration: 1103ms;
+}
+.confetti-piece:nth-child(4) {
+    left: 28%;
+    -webkit-transform: rotate(61deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 334ms;
+    -webkit-animation-duration: 708ms;
+}
+.confetti-piece:nth-child(5) {
+    left: 35%;
+    -webkit-transform: rotate(-52deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 302ms;
+    -webkit-animation-duration: 776ms;
+}
+.confetti-piece:nth-child(6) {
+    left: 42%;
+    -webkit-transform: rotate(38deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 180ms;
+    -webkit-animation-duration: 1168ms;
+}
+.confetti-piece:nth-child(7) {
+    left: 49%;
+    -webkit-transform: rotate(11deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 395ms;
+    -webkit-animation-duration: 1200ms;
+}
+.confetti-piece:nth-child(8) {
+    left: 56%;
+    -webkit-transform: rotate(49deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 14ms;
+    -webkit-animation-duration: 887ms;
+}
+.confetti-piece:nth-child(9) {
+    left: 63%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 149ms;
+    -webkit-animation-duration: 805ms;
+}
+.confetti-piece:nth-child(10) {
+    left: 70%;
+    -webkit-transform: rotate(10deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 351ms;
+    -webkit-animation-duration: 1059ms;
+}
+.confetti-piece:nth-child(11) {
+    left: 77%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 307ms;
+    -webkit-animation-duration: 1132ms;
+}
+.confetti-piece:nth-child(12) {
+    left: 84%;
+    -webkit-transform: rotate(42deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 464ms;
+    -webkit-animation-duration: 776ms;
+}
+.confetti-piece:nth-child(13) {
+    left: 91%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 429ms;
+    -webkit-animation-duration: 818ms;
+}
+.confetti-piece:nth-child(odd) {
+    background: #7431e8;
+}
+.confetti-piece:nth-child(even) {
+    z-index: 1;
+}
+.confetti-piece:nth-child(4n) {
+    width: 5px;
+    height: 12px;
+    -webkit-animation-duration: 2000ms;
+}
+.confetti-piece:nth-child(3n) {
+    width: 3px;
+    height: 10px;
+    -webkit-animation-duration: 2500ms;
+    -webkit-animation-delay: 1000ms;
+}
+.confetti-piece:nth-child(4n-7) {
+  background: red;
+}
+@-webkit-keyframes makeItRain {
+    from {opacity: 0;}
+    50% {opacity: 1;}
+    to {-webkit-transform: translateY(350px);}
+}
+/*******************effet néon félicitations**************************/
+
+
+.sign {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham';
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #6b1839,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+   .sign .fin{
+
+    font-size: 50px;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+    animation: shine 2s forwards, flicker 3s infinite;
+
+   }
+
+   #jeux .rejouer{
+
+    font-size: 18px;
+    position: absolute;
+    z-index: 99999999999999999999;
+    font-family: 'Gotham';
+    bottom: 0;
+    color: #0AEFF7;
+    animation: clignote 2s linear infinite;
+    transform: translate(-50%, -50%);
+    margin-bottom: 50px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 4px;
+   }
+
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+/******************************************/
+
+
+
+
+/************ fin description des languages avec logos***************** */
+
+
+/*animation cliquer pour commencer */
+
+@keyframes clignote {  
+    50% { opacity: 0; }
+  }
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+@keyframes flash {
+    0% {
+
+            color: #c6e2ff;
+            font-size: 8rem;
+            text-shadow:
+              0 0 6px rgba(202,228,225,0.92),
+              0 0 30px rgba(202,228,225,0.34),
+              0 0 12px rgba(30,132,242,0.52),
+              0 0 21px rgba(30,132,242,0.92),
+              0 0 34px rgba(30,132,242,0.78),
+              0 0 54px rgba(30,132,242,0.92);
+          }
+        
+        }
+
+        /**********GAME OVER********************/
+
+        .logo {
+            text-align: center;
+            width: 65%;
+            height: 250px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+             user-select: none;
+          }
+          
+          .logo b{
+            font: 400 19vh "Vibur";
+            color: #fee;
+            text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+          }
+          .logo b span{
+            animation: blink linear infinite 2s;
+          }
+          .logo b span:nth-of-type(2){
+            animation: blink linear infinite 3s;
+          }
+          @keyframes blink {
+            78% {
+              color: inherit;
+              text-shadow: inherit;
+            }
+            79%{
+               color: #333;
+            }
+            80% {
+              
+              text-shadow: none;
+            }
+            81% {
+              color: inherit;
+              text-shadow: inherit;
+            }
+            82% {
+              color: #333;
+              text-shadow: none;
+            }
+            83% {
+              color: inherit;
+              text-shadow: inherit;
+            }
+            92% {
+              color: #333;
+              text-shadow: none;
+            }
+            92.5% {
+              color: inherit;
+              text-shadow: inherit;
+            }
+          }
+          
+          
+          /* follow me @nodws */
+          #btn-twtr{
+            clear:both;
+            color:#fff;
+            border:2px solid;
+            border-radius:3px;
+            text-align:center;
+            text-decoration:none;
+            display:block;
+            font-family:sans-serif;
+            font-size:14px;
+            width:13em;
+            padding:5px 10px;
+            font-weight:600;
+            position:absolute;
+            bottom:20px;
+            left:0;
+            right:0;
+            margin:0 auto;
+            background:rgba(0,0,0,0.2);
+            box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
+            opacity:0.4
+          }#btn-twtr:hover{color:#fff;opacity:1}
+
+          #mobile{
+
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            -webkit-background-size: cover; /* pour Chrome et Safari */
+            -moz-background-size: cover; /* pour Firefox */
+            -o-background-size: cover; /* pour Opera */
+            background-size: cover; /* version standardisée */
+            user-select: none;
+            
+          }
+
+          #mobile img{
+
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            z-index: -9999999;
+          }
+
+          /*************** effet neon pour mobile**************************/
+
+          .neon-red {
+            --neon: hsl(355 100% 95%);
+            --neon-glow: hsl(355 98% 40%);
+          }
+          
+          .neon-blue {
+            --neon: hsl(192 100% 95%);
+            --neon-glow: hsl(194 100% 40%);
+          }
+          
+          #mobile > .info > i {
+            color: var(--neon);
+            text-shadow: 
+              0 0 20px var(--neon-glow),
+              0 0 2.5vmin var(--neon-glow),
+              0 0 5vmin var(--neon-glow),
+              0 0 10vmin var(--neon-glow),
+              0 0 15vmin var(--neon-glow);
+          }
+          
+          @media (dynamic-range: high) {
+            .neon-red {
+              --neon-glow: color(display-p3 1 0 0);
+            }
+            
+            .neon-blue {
+              --neon-glow: color(display-p3 0 0.75 1);
+            }
+            
+            #mobile > .info  > i {
+              text-shadow: 
+                0 0 2.5vmin var(--neon-glow),
+                0 0 10vmin var(--neon-glow),
+                0 0 15vmin var(--neon-glow);
+            }
+          }
+          
+          #mobile > .info  {
+            text-align: center;
+            font-size: 8em;
+            font-weight: normal;
+            position: absolute;
+            z-index: 999;
+            text-align: center;
+          }
+          
+        
+
+          /***************************************************************/
+
+
+
+
+        /**************media querrie****************/
+
+        @media screen and (max-width: 1000px)
+{
+    /* Rédigez vos propriétés CSS ici */
+
+    #jeux{
+
+        display: none;
+        visibility: hidden;
+    }
+
+    #loader{
+
+        display: none;
+        visibility: hidden;
+
+    }
+
+    #accueil{
+
+        display: none;
+        visibility: hidden; 
+    }
+
+    #mobile{
+
+        display: flex;
+    }
+
+    .loi{
+
+        display: none;
+        visibility: hidden;
+    }
+
+}

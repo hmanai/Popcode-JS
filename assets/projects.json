@@ -1,0 +1,34 @@
+{
+    "projects": {
+      "project": [
+        {
+          "name": "creative",
+          "description": "<p> Ce projet consiste a integrer une maquette graphique donnée par notre formateur en s'assurant que le site soit résponsive.</p>", 
+          "outils": "<p> HTML et CSS, </p>",
+          "picture" : "../assets/img/creative.png"
+         
+        },
+        {
+            "name": "Capgemen",
+            "description": "<p> Ce projet consiste a integrer une maquette graphique donnée par notre formateur en s'assurant que le site soit résponsive.</p>", 
+            "outils": "<p> HTML, CSS, BOOTSTRAP </p>",
+            "picture" : "../assets/img/capgemen.png"
+          },
+        {
+            "name": "Calculatrice",
+            "description": "<p> Ce mini projet consiste à appliquer les notion de base en javascript pour créer et développer une calculatrice.</p>", 
+            "outils": "<p> HTML, CSS, javascript </p>",
+            "picture" : "../assets/img/calculatrice.png"
+          },
+          {
+            "name": "PopCode",
+            "description": "<p> le but de ce projet est de créer un jeux sous forme d'une application WZB ludique permettant aux utilisateurs par le biais d'un système de cherche et trouve, de découvrir différents languages informatique de programmation et d'en savoir plus sur ceux-ci. </p>", 
+            "outils": "<p> HTML, CSS, javascript </p>",
+            "picture" : "../assets/img/popcode.png"
+          }
+        
+          
+
+    ]
+    }
+}

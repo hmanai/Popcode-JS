@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- jquerry-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--------->
+    <script src="https://kit.fontawesome.com/573723cbf2.js" crossorigin="anonymous"></script>
+
+
+    <title>jeu Pop Code</title>
+   
+</head>
+<body>
+    <section id="jeux">
+      
+        <div class="background-img"> <img class="myImg" src="assets/img/chambe2.jpg"></div>
+        <div class="logoUpRight"><img src="assets/img/logoPure.png" alt="logo"> </div>
+        <input class="searLang opacity" id="chercher" name="chercher" type="text"  >
+        <p class="tapLang opacity"> TAPE UN NOM DE LANGAGE DE PROGRAMMATION</p>
+       
+        <div class="gameover">
+         <div class="logo"><b>G<span>am</span>e <span>ov</span>er</b></div>
+           <div class="finalScor"></div>
+           <h4 id="emoji"> 🥺</h4>
+           <a href="index.html"> <h2 class="restart" >  Recommencer le jeux</h2> </a> 
+          </div>
+
+<div class="scoreBox">
+  <div class="scoreUnderligned"> Score</div>
+     <div class="scor"> 
+        <div class="scoreActuel">
+            <div class="langageTrouve"> 00</div>
+            <div class="totalLangage"> / 27</div>
+        </div>
+     <div class="nbFautes">
+        <span class="nbFaute"> X</span>
+        <span class="nbFaute"> X</span>
+        <span class="nbFaute"> X</span>
+     </div>
+    </div> 
+  <div class="messageAfficher">
+
+  </div>
+</div>
+
+<div class="blockBasGauche">
+  
+  <div class="langTrouvee">
+    <div class="lang-finded"> Langages trouvés</div>
+    <img src="assets/img/search-icon.png" alt="icone de recherche">
+    
+  </div>
+
+  <div class="zooming">
+    <div class="barreZoom">
+      <div class ="barZoom"></div>
+      <div class ="plus"> <span class="zooom" >Zoom</span><span>+</span> </div>
+      <div class ="moin"><span>-</span></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="listeLangTrouv"> 
+  <img src="assets/img/Rectangle 1.png" alt="photo d'un mur">
+ 
+  <div id="listLog">
+  <div id="myList"> </div>
+
+  </div>
+
+  <i class=" close fa-solid fa-xmark"></i>
+</div>
+
+
+
+<div class="mentLegal">
+  <div id="mentlegals"> <img src="assets/img/Rectangle 1.png" alt=""> </div>
+  <img src="assets/img/Rectangle 1.png" alt="">
+  <i class=" fermerPage fa-solid fa-xmark"></i>
+
+</div>
+
+
+
+
+<div class="mentionLegal"></div>
+        <div class="loi">
+            <div class="mlegale"><a href="#" style="color:white">Mention Légales</a></div>
+         </div>
+
+
+<div id="lgTrouver">
+     
+      <div id="logoLang"> <span id="nomLang"></span><img id="logoPic"></div>
+      <div id="langDescrip"> </div>
+      <i class=" fermer fa-solid fa-xmark"></i>
+</div>
+
+<div class="start">
+  <p class="gameStart"> TAPE UN NOM DE LANGAGE DE PROGRAMMATION</p>
+  <i class=" logoClavier fa-solid fa-keyboard"></i>
+</div>
+
+<div id="felicitation">
+   
+  <div class="confetti">
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+
+    
+</div>
+<div class="sign">
+  <span class="fast-flicker">Fé</span>lici<span class="flicker">ta</span>tions...! </br>
+  <span class="fin">Tu As Fini Le Jeu</span></div>
+  <a href="index.html"> <h2 class="rejouer" >  Recommencer le jeux</h2> </a> 
+</div>
+</div>
+    </section>
+<!-- jsdelivr CDN  pour sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+
+<!-- -- ---->
+
+    <script src="assets/zoom.js" async ></script>
+    <script src="assets/search.js" async ></script>
+
+</body>
+</html>
